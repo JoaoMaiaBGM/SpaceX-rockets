@@ -1,2 +1,3 @@
-# nasa-api-images
-A repository to show information and images, from NASA, regard to Mars's rovers.
+# NASA's Mars rovers images 🚀
+
+This application have te purpose to show some images and information about the Mars's rovers on their mission.
