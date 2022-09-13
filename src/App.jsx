@@ -1,8 +1,6 @@
 import { ToastContainer } from "react-toastify";
 import RoutesMain from "./Routes";
 
-import "./App.css";
-
 function App() {
   return (
     <>
