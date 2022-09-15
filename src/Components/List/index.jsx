@@ -1,20 +1,11 @@
-import { useState } from "react";
-import Api from "../../Services/Api";
+import { useContext } from "react";
 import Cards from "../Cards";
+import { Context } from "../../Context/AuthContext";
 
 import { ListContainer } from "./styles";
 
 export default function List() {
-  const [rockets, setRockets] = useState([]);
-
-  function getRockets() {
-    Api.get("/rockets")
-      .then((response) => {
-        setRockets(response.data);
-      })
-      .catch((err) => console.log(err));
-  }
-  getRockets();
+  const { rockets } = useContext(Context);
 
   return (
     <ListContainer>
