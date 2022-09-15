@@ -1,12 +1,13 @@
-import { Link } from "react-router-dom";
+import CardsFront from "../../Components/Cards";
+import Header from "../../Components/Header";
+
+import { DashboardContainer } from "./styles";
 
 export default function Dashboard() {
   return (
-    <div>
-      <h1>Dashboard</h1>
-      <Link to='/'>
-        <button type='button'>Ir para Home</button>
-      </Link>
-    </div>
+    <DashboardContainer>
+      <Header />
+      <CardsFront />
+    </DashboardContainer>
   );
 }
