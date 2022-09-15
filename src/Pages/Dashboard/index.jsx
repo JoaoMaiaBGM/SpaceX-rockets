@@ -1,5 +1,5 @@
-import CardsFront from "../../Components/Cards";
 import Header from "../../Components/Header";
+import List from "../../Components/List";
 
 import { DashboardContainer } from "./styles";
 
@@ -7,7 +7,7 @@ export default function Dashboard() {
   return (
     <DashboardContainer>
       <Header />
-      <CardsFront />
+      <List />
     </DashboardContainer>
   );
 }

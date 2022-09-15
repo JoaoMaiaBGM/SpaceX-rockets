@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const DashboardContainer = styled.div`
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   background: linear-gradient(
     180deg,
     #121214 0.84%,
