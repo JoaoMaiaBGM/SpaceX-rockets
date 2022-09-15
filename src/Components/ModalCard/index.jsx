@@ -1,29 +1,41 @@
-export default function ModalCard() {
+import { Container } from "./styles";
+
+export default function ModalCard({
+  id = "modal",
+  isOpenModalCard,
+  setIsOpenModalCard,
+  rocketData,
+}) {
+  function handleOutsideClick(event) {
+    if (event.target.id === id) {
+      setIsOpenModalCard(false);
+    }
+  }
+
   return (
-    <div className='cardBack'>
-      <div className='cardInfo'>
-        <h3>Nome:</h3>
-        <p>Falcon 1</p>
+    <Container
+      id={id}
+      isOpenModalCard={isOpenModalCard}
+      onClick={handleOutsideClick}>
+      <div className='cardBack'>
+        <div className='cardImg'></div>
+        <div className='cardInfo'>
+          <h3>Nome:</h3>
+          <p>{rocketData.name}</p>
 
-        <h3>Situação:</h3>
-        <p>Inativo</p>
+          <h3>Situação:</h3>
+          <p>{rocketData.active}</p>
 
-        <h3>Custo de lançamento:</h3>
-        <p>US$ 6,7 milhões</p>
+          <h3>Custo de lançamento:</h3>
+          <p>{rocketData.cost_per_launch}</p>
 
-        <h3>Altura:</h3>
-        <p>70 metros</p>
+          <h3>Descrição:</h3>
+          <p>{rocketData.description}</p>
 
-        <h3>Peso:</h3>
-        <p>549 toneladas</p>
-
-        <h3>Qtd motores:</h3>
-        <p>09</p>
-
-        <h3>Primeiro vôo:</h3>
-        <p>24/03/06</p>
+          <h3>Primeiro vôo:</h3>
+          <p>{rocketData.first_flight}</p>
+        </div>
       </div>
-      <button className='btnImage'>Imagem</button>
-    </div>
+    </Container>
   );
 }
