@@ -6,6 +6,10 @@ export const ListContainer = styled.div`
 
   margin: 0 auto;
 
+  @media screen and (max-width: 875px) {
+    margin-top: 90px;
+  }
+
   ul {
     width: 90%;
 
@@ -18,5 +22,13 @@ export const ListContainer = styled.div`
     flex-wrap: wrap;
     gap: 30px;
     padding-bottom: 20px;
+
+    @media screen and (max-width: 875px) {
+      width: 100%;
+      height: 100vh;
+
+      flex-direction: column;
+      overflow-x: scroll;
+    }
   }
 `;
