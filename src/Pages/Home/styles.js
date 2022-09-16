@@ -1,8 +1,13 @@
 import styled from "styled-components";
+import homeBackground from "../../Assets/Homepage_background.svg";
 
 export const BackgroundContainer = styled.div`
   width: 100vw;
   height: 100vh;
+
+  background-image: url(${homeBackground});
+  background-repeat: no-repeat;
+  background-position: center;
 `;
 
 export const MainContainer = styled.main`
@@ -18,7 +23,7 @@ export const MainContainer = styled.main`
   align-items: center;
 
   div {
-    width: 40%;
+    width: 35%;
     height: max-content;
 
     display: flex;
