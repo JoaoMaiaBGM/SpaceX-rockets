@@ -45,6 +45,29 @@ export const IntroContainer = styled.section`
 
       text-shadow: 0px 4px 4px rgba(255, 255, 255, 0.25);
     }
+
+    @media screen and (max-width: 425px) {
+      width: 90%;
+
+      img {
+        width: 200px;
+      }
+
+      p {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 25px;
+      }
+    }
+
+    /* @media screen and (max-width: 900px) {
+      width: 80%;
+
+      p {
+        font-weight: 600;
+        line-height: 35px;
+      }
+    } */
   }
 `;
 
@@ -56,10 +79,15 @@ export const ProfileContainer = styled.section`
 
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
 
   margin-bottom: 40px;
+
+  @media screen and (max-width: 425px) {
+    display: flex;
+    flex-direction: column;
+  }
 
   .ElonMuskImg {
     width: 40%;
@@ -85,6 +113,36 @@ export const ProfileContainer = styled.section`
 
       color: #828282;
     }
+
+    @media screen and (max-width: 425px) {
+      width: 90vw;
+
+      justify-content: center;
+      align-items: center;
+
+      margin-bottom: 20px;
+
+      .ElonMuskImg {
+        width: 50%;
+      }
+
+      label {
+        font-size: 12px;
+        text-align: justify;
+      }
+    }
+
+    /* @media screen and (max-width: 900px) {
+      justify-content: center;
+      align-items: center;
+
+      margin-bottom: 20px;
+
+      label {
+        font-size: 12px;
+        text-align: justify;
+      }
+    } */
   }
 
   .ElonMuskProfile {
@@ -105,6 +163,15 @@ export const ProfileContainer = styled.section`
 
       color: #000000;
     }
+
+    @media screen and (max-width: 425px) {
+      width: 100%;
+
+      p {
+        font-size: 15px;
+        line-height: 25px;
+      }
+    }
   }
 `;
 
@@ -120,8 +187,20 @@ export const HistoryContainer = styled.section`
     width: 40%;
 
     padding: 30px 30px 20px 30px;
-
     margin-left: 150px;
+
+    @media screen and (max-width: 425px) {
+      width: 90%;
+
+      padding: 0;
+      margin: 0 auto;
+    }
+
+    /* @media screen and (max-width: 900px) {
+      width: 55%;
+
+      margin-left: 90px;
+    } */
   }
 
   .historyDescription {
@@ -137,5 +216,13 @@ export const HistoryContainer = styled.section`
 
     color: #000000;
     text-shadow: -4px 4px 4px rgba(255, 255, 255, 0.25);
+
+    @media screen and (max-width: 425px) {
+      font-size: 15px;
+    }
+
+    /* @media screen and (max-width: 900px) {
+      font-size: 20px;
+    } */
   }
 `;
