@@ -1,4 +1,4 @@
-import { Container } from "./styles";
+import { Container, Modal } from "./styles";
 
 export default function ModalCard({
   id = "modal",
@@ -17,14 +17,10 @@ export default function ModalCard({
       id={id}
       isOpenModalCard={isOpenModalCard}
       onClick={handleOutsideClick}>
-      <div className='cardBack'>
-        <div className='cardImg'></div>
+      <Modal>
         <div className='cardInfo'>
           <h3>Nome:</h3>
           <p>{rocketData.name}</p>
-
-          <h3>Situação:</h3>
-          <p>{rocketData.active}</p>
 
           <h3>Custo de lançamento:</h3>
           <p>{rocketData.cost_per_launch}</p>
@@ -35,7 +31,7 @@ export default function ModalCard({
           <h3>Primeiro vôo:</h3>
           <p>{rocketData.first_flight}</p>
         </div>
-      </div>
+      </Modal>
     </Container>
   );
 }

@@ -1,13 +1,12 @@
 import { Link } from "react-router-dom";
 import Header from "../../Components/Header";
-import homeImg from "../../Assets/home_img.svg";
 import Footer from "../../Components/Footer";
 
 import { BackgroundContainer, MainContainer } from "./styles";
 
 export default function Home() {
   return (
-    <BackgroundContainer style={{ backgroundImage: `url(${homeImg})` }}>
+    <BackgroundContainer>
       <Header />
       <MainContainer>
         <div>

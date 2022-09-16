@@ -7,8 +7,6 @@ export const HeaderContainer = styled.header`
   display: flex;
   flex-direction: column;
 
-  background-color: inherit;
-
   .headerMain {
     width: 100%;
     height: 100%;

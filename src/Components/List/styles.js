@@ -17,5 +17,6 @@ export const ListContainer = styled.div`
 
     flex-wrap: wrap;
     gap: 30px;
+    padding-bottom: 20px;
   }
 `;
