@@ -57,6 +57,10 @@ export const Modal = styled.div`
     }
   }
 
+  @media screen and (max-width: 425px) {
+    width: 80%;
+  }
+
   .cardInfo {
     width: 100%;
     height: 100%;
