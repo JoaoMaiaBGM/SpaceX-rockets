@@ -69,7 +69,23 @@ export const FooterMain = styled.div`
       color: inherit;
       text-decoration: none;
 
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+
+      color: #000000;
+
       cursor: pointer;
     }
+  }
+
+  span {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+
+    color: #000000;
   }
 `;
