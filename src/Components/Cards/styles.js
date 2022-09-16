@@ -28,6 +28,9 @@ export const CardContainer = styled.li`
 
     img {
       width: 100%;
+      height: 80%;
+
+      border-radius: 10px;
     }
 
     .btnDetails {
