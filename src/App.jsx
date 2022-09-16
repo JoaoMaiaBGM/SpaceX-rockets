@@ -10,7 +10,6 @@ function App() {
         <RoutesMain />
       </Provider>
       <GlobalStyle />
-      <ToastContainer />
     </>
   );
 }

@@ -3,7 +3,7 @@ import homeBackground from "../../Assets/Homepage_background.svg";
 
 export const BackgroundContainer = styled.div`
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
 
   background-image: url(${homeBackground});
   background-repeat: no-repeat;
@@ -12,18 +12,16 @@ export const BackgroundContainer = styled.div`
 
 export const MainContainer = styled.main`
   width: 100vw;
-  height: 100vh;
 
   display: flex;
   margin: 0 auto;
 
-  position: fixed;
   top: 0;
   justify-content: center;
   align-items: center;
 
   div {
-    width: 35%;
+    width: 40%;
     height: max-content;
 
     display: flex;
@@ -34,6 +32,7 @@ export const MainContainer = styled.main`
 
     @media screen and (max-width: 960px) {
       width: 60%;
+      margin-top: 30px;
     }
 
     @media screen and (max-width: 640px) {
